@@ -1,0 +1,23 @@
+<div class="container contain">
+  <p class="introtext">Please add a new to do task to the List</p>
+  <div class="input-group textbox">
+    <input type="text" class="form-control" placeholder="Add a task" #inputvalue (keyup.enter)="onAdd(inputvalue)">
+    <div class="input-group-addon hover-cursor" (click)="onAdd(inputvalue)">
+      <i class="fa fa-plus-circle fa-2x"></i>
+    </div>
+  </div>
+
+  <div class="textbox">
+    <ul class="list-group" *ngFor="let todo of toDoListArray">
+      <li *ngIf="todo.title" class="list-group-item">
+        <span class="hover-check" (click)="checkorUncheck(todo.$key,todo.isChecked)" [class.text-success]="todo.isChecked">
+          <i class="fa fa-lg" aria-hidden="true" [ngClass]="todo.isChecked ? 'fa fa-check-circle':'fa fa-circle-thin' "></i>
+        </span>
+        {{todo.title}}
+        <span class="hover-check" (click)="onDelete(todo.$key)">
+          <i class="fa fa-lg fa fa-trash" aria-hidden="true" style="float:right;color:#f85252"></i>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

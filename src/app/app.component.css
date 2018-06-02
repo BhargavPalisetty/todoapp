@@ -1,0 +1,17 @@
+footer {
+  background-color: #141415;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.footertext {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 10px;
+}

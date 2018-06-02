@@ -1,0 +1,32 @@
+.contain {
+  padding: inherit;
+  margin-top: 20px;
+  float: left;
+}
+
+.textbox {
+  margin-bottom: 8px;
+  box-shadow: 9px 10px 5px rgb(24, 6, 6);
+}
+
+.hover-cursor {
+  color: white;
+  padding: 7px;
+  background-color: rgb(160, 153, 153);
+  border-radius: 3px;
+}
+
+.hover-cursor:hover {
+  background-color: rgb(101, 102, 100);
+  cursor: pointer;
+}
+
+.hover-check:hover {
+  cursor: pointer;
+}
+
+.introtext {
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+}
